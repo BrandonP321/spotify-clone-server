@@ -58,8 +58,8 @@ export const refreshAccessToken: RouteController<{ ReqBody: { refreshToken?: str
         const { data: { access_token } } = await getRefreshedToken(refreshToken);
 
         return res.json({ accessToken: access_token }).end();
-    } catch (err) {
-        console.log(err);
+    } catch (err: any) {
+        console.log(err.response);
         return res.json({ msg: "Error refreshing access token" }).status(400).end();
     }
 }
