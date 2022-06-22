@@ -1,5 +1,5 @@
+import { getSpotifyAccessToken, refreshAccessToken } from "../controllers/auth.controllers";
 import express from "express";
-import { getSpotifyAccessToken, refreshAccessToken } from "~Controllers/auth.controllers";
 
 const router = express.Router();
 

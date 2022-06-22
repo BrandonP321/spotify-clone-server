@@ -4,8 +4,8 @@ import express from "express";
 dotenv.config();
 
 import { createServer } from "http"
-import { configureApp } from "~Middleware/appConfig";
-import { configureRoutes } from "~Routes";
+import { configureApp } from "./middleware/appConfig";
+import { configureRoutes } from "./routes";
 
 const PORT = process.env.PORT || "8000";
 
