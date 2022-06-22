@@ -1,7 +1,7 @@
 {
   "scripts": {
     "start-dev": "nodemon src/server.ts",
-    "start": "tsc & node dist/server.js"
+    "start": "tsc && node dist/server.js"
   },
   "dependencies": {
     "axios": "^0.27.2",
